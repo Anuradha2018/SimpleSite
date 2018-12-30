@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { CrimeTimelineService } from './../crime-timeline.service';
+import { Chart } from 'chart.js';
+import { map } from 'rxjs/operators';
+// import 'rxjs/add/operator/map';
+import { Observable, throwError } from 'rxjs';
 
 @Component({
   selector: 'app-crime-timeline',
@@ -6,10 +11,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crime-timeline.component.css']
 })
 export class CrimeTimelineComponent implements OnInit {
+  chart = [];
 
-  constructor() { }
+  constructor(private crimeTimelineService: CrimeTimelineService) { }
 
   ngOnInit() {
+    this.crimeTimelineService.showTimeline()
+      .subscribe(res => {
+        console.log(res);
+      })
   }
 
 }

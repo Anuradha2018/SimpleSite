@@ -1,3 +1,4 @@
+import { CrimeTimelineService } from './crime-timeline.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule} from '@angular/common/http';
@@ -12,6 +13,7 @@ import { NavigatorComponent } from './navigator/navigator.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { CrimeTimelineComponent } from './crime-timeline/crime-timeline.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { CrimeTimelineComponent } from './crime-timeline/crime-timeline.componen
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CrimeTimelineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
