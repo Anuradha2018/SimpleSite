@@ -22,6 +22,8 @@
     "@angular/router": "^6.1.0",
     "ag-grid": "^18.1.2",
     "ag-grid-angular": "^19.1.2",
+    "ag-grid-community": "^19.1.4",
+    "chart.js": "^2.7.3",
     "core-js": "^2.5.4",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
@@ -45,6 +47,6 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "^2.9.2"
   }
 }
