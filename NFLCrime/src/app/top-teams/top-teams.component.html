@@ -7,8 +7,16 @@
   <title>Document</title>
 </head>
 <body>
-    <div class="jumbotron vertical-center"> 
-      <div class="container">
+    <div class="jumbotron" style="width:75%; margin: auto"> 
+        <h2 align="center">TOP TEAMS</h2>
+        <p class="lead">The Top Teams endpoint returns the most popular crimes in the NFL.</p>
+        <hr class="my-4">
+        <p>The base url for the first version of the api is http://nflarrest.com/api/v1/, next you have the endpoints Crime, Team, Player. 
+          All requests should be made with HTTP GET requests</p>
+
+        <hr class="my-4">
+        <app-global-datepicker></app-global-datepicker>
+        <hr class="my-4">
           <ag-grid-angular 
           style="width: 800px; height: 630px;" 
           class="ag-theme-material"
@@ -17,7 +25,6 @@
           [rowData]="rowData | async" 
           [columnDefs]="columnDefs">
         </ag-grid-angular>
-      </div>
     </div>
   </body>
 </html>

@@ -7,7 +7,16 @@
   <title>Top Players</title>
 </head>
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron" style="width:75%; margin: auto">
+      <h2 align="center">TOP PLAYERS</h2>
+      <p class="lead">The Top Players endpoint returns the most popular crimes in the NFL.</p>
+      <hr class="my-4">
+      <p>The base url for the first version of the api is http://nflarrest.com/api/v1/, next you have the endpoints Crime, Team, Player. 
+        All requests should be made with HTTP GET requests</p>
+
+      <hr class="my-4">
+      <app-global-datepicker></app-global-datepicker>
+      <hr class="my-4">
             <ag-grid-angular 
             style="width: 500px; height: 475px;" 
             class="ag-theme-material"
